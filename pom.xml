@@ -59,5 +59,23 @@
       </plugin>
 	</plugins>
   </build>
+ <repositories>
+		<repository>
+			<id>artifactory</id>
+			<name>Artifactory</name>
+			<url>http://localhost:8081/artifactory/</url>
+		</repository>
+	<repository>
+      <id>mvnrepository</id>
+      <url>http://mvnrepository.com/artifact/</url>
+    </repository>
+	</repositories>
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>IBM529-LR4PEC8-releases</name>
+        <url>http://localhost:8081/artifactory/ext-release-local</url>
+    </repository>
+</distributionManagement>
 </project>
 
